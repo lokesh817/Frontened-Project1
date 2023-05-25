@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div id="container">
+        
+        <div class="list-container">
+            <h1 id="app-title"> ToDo </h1>
+            <div class="input-todo">
+                <i class="fas fa-receipt " id="note-icon"></i>
+                <input type="text" id="to-do-input" name="task" placeholder="Type you do to list" required>
+                <i id="add-button"class="fas fa-plus plus-sign"></i> 
+            </div>
+            <div class="task-header-items">
+                <span><i class="fas fa-check-double"></i> Complete All tasks</span>
+                <span>clear complete</span> 
+            </div>
+            <ul id="list-item">
+                <li> 
+                    <input type="checkbox" class='checkbox-round'>
+                    <span>Demo</span>
+                    <i class=" fas fa-times cross-button"></i>
+                </li>
+            </ul>
+            <div class="task-footer-items">
+                <span id="count-tasks" data-task-remaining="1">
+                    1 tasks left
+                </span>
+                <div>
+                    <span><b>All</b></span>
+                    <span>Uncompleted</span>  
+                    <span>completed</span> 
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
